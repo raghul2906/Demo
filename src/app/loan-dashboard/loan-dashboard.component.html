@@ -1,7 +1,7 @@
-<ag-grid-angular 
-    style="width: 800px; height: 700px; margin-left: 300px; margin-top: 20px;" 
-    class="ag-theme-alpine"
-    [rowData]="rowData" 
-    [columnDefs]="columnDefs">
+<h1>welcome {{UserName}}</h1>
+<ag-grid-angular  style="width: 1000px; height: 800px; margin-left: 200px; margin-top: 20px;" class="ag-theme-alpine" [rowData]="rowData"
+  (gridReady)="onGridReady($event)" [editType]="'fullRow'" (rowEditingStopped)="onRowEditingStopped"
+  [frameworkComponents]="frameworkComponents" [columnDefs]="columnDefs">
 </ag-grid-angular>
+
 
